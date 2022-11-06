@@ -268,7 +268,7 @@ body {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.2);
     
-    transition: opacity var(--time) var(--cubic-bezier);
+    transition: opacity var(--time) var(--cubic-bezier), visibility var(--time) var(--cubic-bezier);
 }
 
 .backdrop.is-hidden {
@@ -312,12 +312,12 @@ body {
     cursor: pointer;
     background-color: var(--primary-white-coor);
 
-    transition: border-color var(--time) var(--cubic-bezier);
+    transition: fill var(--time) var(--cubic-bezier);
 }
 
 .close-btn:hover,
 .close-btn:focus {
-    border-color: var(--accent-color);
+    fill: var(--accent-color);
 }
 
 
