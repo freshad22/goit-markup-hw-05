@@ -33,7 +33,7 @@
 
           <ul class="nav-list">
             <li class="header-nav-item">
-              <a href="./index.html" class="header-nav-link link">Студія</a>
+              <a href="./index.html" class="header-nav-link link current">Студія</a>
             </li>
             <li class="header-nav-item">
               <a href="./portfolio.html" class="header-nav-link link"
@@ -79,13 +79,6 @@
         <div class="hat-box container">
           <h1 class="hat-headline-h">Ефективні рішення для вашого бізнесу</h1>
           <button data-modal-open class="hat-btn" type="button">Замовити послугу</button>
-          <div class="backdrop is-hidden" data-modal>
-            <div class="modal">
-              <button data-modal-close class="close-btn" type="button"><svg class="icon-modal" width="18" height="18">
-                <use href="./images/icons.svg.svg#close-modal"></use>
-              </svg></button>
-            </div>
-          </div>
         </div>
       </section>
 
@@ -151,34 +144,49 @@
           <h2 class="engaged-title-hh">Чим ми займаємося</h2>
           <ul class="engaged-list">
             <li class="engaged-list-photo">
-              <img
-                class="engaged-item"
-                src="./images/engaged/img.jpg"
-                alt="Пише код на клавіатурі"
-                class="photo"
-                width="370"
-                height="294"
-              />
+              <div class="wrapper">
+                <img
+                  class="engaged-item"
+                  src="./images/engaged/img.jpg"
+                  alt="Пише код на клавіатурі"
+                  class="photo"
+                  width="370"
+                  height="294"
+                />
+                <div class="overlay-box">
+                  <p class="overlay-text">Десктопні додатки</p>
+                </div>
+              </div>
             </li>
             <li class="engaged-list-photo">
-              <img
-                class="engaged-item"
-                src="./images/engaged/img1.jpg"
-                alt="Дивитися у телефона"
-                class="photo"
-                width="370"
-                height="294"
-              />
+              <div class="wrapper">
+                <img
+                  class="engaged-item"
+                  src="./images/engaged/img1.jpg"
+                  alt="Дивитися у телефона"
+                  class="photo"
+                  width="370"
+                  height="294"
+                />
+                <div class="overlay-box">
+                  <p class="overlay-text">Мобільні додатки</p>
+                </div>
+              </div>
             </li>
             <li class="engaged-list-photo">
-              <img
-                class="engaged-item"
-                src="./images/engaged/img2.jpg"
-                alt="Малює на планшеті"
-                class="photo"
-                width="370"
-                height="294"
-              />
+              <div class="wrapper">
+                <img
+                  class="engaged-item"
+                  src="./images/engaged/img2.jpg"
+                  alt="Малює на планшеті"
+                  class="photo"
+                  width="370"
+                  height="294"
+                />
+                <div class="overlay-box">
+                  <p class="overlay-text">Дизайнерські рішення</p>
+                </div>
+              </div>
             </li>
           </ul>
         </div>
@@ -559,6 +567,15 @@
         </div>
       </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button data-modal-close class="close-btn" type="button"><svg class="icon-modal" width="18" height="18">
+          <use href="./images/icons.svg.svg#close-modal"></use>
+        </svg></button>
+      </div>
+    </div>
+
     <script src="./js/modal.js"></script>
   </body>
 </html>
